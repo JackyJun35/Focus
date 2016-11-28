@@ -60,7 +60,7 @@ public class AdviceActivity extends Activity {
         @Override
         protected Long doInBackground(String... params) {
             try {
-                GMailSender sender = new GMailSender("jackyjun935@gmail.com", "tansijun20000117");
+                GMailSender sender = new GMailSender("username@gmail.com","password");
                 sender.sendMail(params[0],
                         params[1],
                         "jackyjun935@gmail.com",
