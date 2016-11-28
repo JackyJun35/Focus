@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:title="@string/app_name"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="6dp"
+            android:backgroundTint="@color/colorPrimaryDark">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/total_stats_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="累计使用情况"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/stats_text_view1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="今日时间"
+                    android:textColor="@color/SecondaryTextColor"
+                    android:layout_below="@+id/total_stats_text_view"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/stats_text_view_hour_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:layout_below="@+id/stats_text_view1"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/stats_text_view3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小时"
+                    android:textColor="@color/SecondaryTextColor"
+                    android:layout_toEndOf="@+id/stats_text_view_hour_today"
+                    android:layout_alignBaseline="@+id/stats_text_view_hour_today"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="2dp"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/stats_text_view_minute_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:layout_below="@+id/stats_text_view1"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/stats_text_view3"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/stats_text_view5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分钟"
+                    android:textColor="@color/SecondaryTextColor"
+                    android:layout_toEndOf="@+id/stats_text_view_minute_today"
+                    android:layout_alignBaseline="@+id/stats_text_view_minute_today"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="2dp"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/stats_text_view6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累计时间"
+                    android:textColor="@color/SecondaryTextColor"
+                    android:layout_below="@+id/total_stats_text_view"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_alignParentRight="true"
+                    />
+
+                <TextView
+                    android:id="@+id/stats_text_view_hour_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:layout_below="@+id/stats_text_view6"
+                    android:layout_marginTop="0dp"
+                    android:layout_alignStart="@id/stats_text_view6"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/stats_text_view_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小时"
+                    android:textColor="@color/SecondaryTextColor"
+                    android:layout_toEndOf="@+id/stats_text_view_hour_total"
+                    android:layout_alignBaseline="@+id/stats_text_view_hour_total"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="2dp"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/stats_text_view_minute_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:layout_below="@+id/stats_text_view1"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/stats_text_view_7"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/stats_text_view8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分钟"
+                    android:textColor="@color/SecondaryTextColor"
+                    android:layout_toEndOf="@+id/stats_text_view_minute_total"
+                    android:layout_alignBaseline="@+id/stats_text_view_minute_total"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="2dp"
+                    android:textSize="12sp"
+                    />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginTop="6dp"
+            app:cardBackgroundColor="@color/StatsColorBlue">
+            <com.db.chart.view.BarChartView
+                xmlns:chart="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/weekly_bar_chart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:background="@null"
+                chart:chart_barSpacing="@dimen/bar_spacing"
+                >
+            </com.db.chart.view.BarChartView>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="@color/StatsColorBlue">
+            <com.db.chart.view.BarChartView
+                xmlns:chart="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/monthly_bar_chart"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:background="@null">
+            </com.db.chart.view.BarChartView>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

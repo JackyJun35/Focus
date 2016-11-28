@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UI.MainActivity">
+    <item
+        android:id="@+id/action_stats"
+        android:orderInCategory="1"
+        android:title="Stats"
+        android:icon="@drawable/ic_equalizer_white_24dp"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_history"
+        android:orderInCategory="2"
+        android:title="History"
+        android:icon="@drawable/ic_restore_white_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_about_app"
+        android:orderInCategory="3"
+        android:title="关于app"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_advice"
+        android:orderInCategory="4"
+        android:title="意见反馈"
+        app:showAsAction="never"/>
+
+
+
+</menu>

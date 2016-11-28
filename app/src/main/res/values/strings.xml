@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Focus+</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="action_finish">Finish</string>
+    <string name="action_delete">删除</string>
+    <string name="history">History</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="description_placeholder">This is a wonderful essay prompt.  It\'s a throwback to years past, before the advent of social media, 140 characters, and texting.  Think about it - if you were introduce yourself to your roommate for the first time in a good ol\' USPS-mailed letter, how would you approach the note?         Rattling off your accomplishments might come across as self-centered, but you\'d still most likely look for ways to display your personality and interests, while simultaneously finding out a bit more about your roomie\'s life.</string>
+    <string name="action_finish_plan_card">标记为已完成</string>
+
+    <string name="history_delete_alertdialog_title">项目删除</string>
+    <string name="history_delete_alertdialog_content">你想要删除这个项目吗？（项目删除之后无法还原）</string>
+
+    <string name="about_overall">  This time management app: Focus, is a personal app project made by Jeffrey Tan.
+        \n\n Right now this very first version has integrated the basic functionality of projects management, time tracking and stats.
+        \n\n However, the functionality is not complete and some bug still remains due to the lack of labor.
+        \n\n If you have good advice for the app, feel free to contact me with the Feedback function. I am happy to hear your precious advice. Please look forward to the second version. :)</string>
+    <string name="whats_next">The next version will focus on Time tracking and Stats.Possible functions include:\n\n
+    1. Advance stats features that can provide more specific stats for each project\n
+    2. More advanced Todo system that can plan your everyday\'s task.\n
+    3. Integration of Pomodoro Technique to improve efficiency\n
+    4. Better motivation module that may integrate different techniques to motivate you.\n\n
+        Enjoy and look forward to the next version! :)
+    </string>
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="30dp"
+        app:cardBackgroundColor="@color/MyBlue"
+        app:cardElevation="6dp"
+        android:id="@+id/card_view_in_plan_info">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/plan_title_in_plan_info_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="计划的名称"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/deadline_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="6dp"
+                android:text="截止日期"
+                android:layout_below="@id/plan_title_in_plan_info_card"/>
+
+            <TextView
+                android:id="@+id/deadline_text_view"
+                android:textColor="@color/White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016/08/30"
+                android:layout_below="@id/deadline_text_title"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/duration_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已坚持"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/plan_title_in_plan_info_card"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/day_spent_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textColor="@color/White"
+                android:textSize="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/duration_text_title"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/progress_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已完成"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="6dp"
+                android:layout_below="@id/plan_title_in_plan_info_card"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/progress_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90%"
+                android:textSize="30sp"
+                android:textColor="@color/White"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/progress_text_title"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="6dp"/>
+
+
+            <TextView
+                android:id="@+id/chronometer_in_plan_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:format="00:%s"
+                android:textSize="50sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"/>
+
+            <ImageButton
+                android:id="@+id/edit_plan_info_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mode_edit_grey_600_24dp"
+                android:background="@null"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_in_plan_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play_arrow_white_48dp"
+        android:scaleType="center"
+        app:fabSize="normal"
+        app:fab_elevation="8dp"
+        app:layout_anchor="@id/card_view_in_plan_info"
+        app:layout_anchorGravity="bottom|center"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <EditText
+            android:id="@+id/alert_dialog_edit_text_plan_name"
+            android:inputType="text"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:hint="项目名称" />
+    </android.support.design.widget.TextInputLayout>
+
+    <CalendarView
+        android:id="@+id/alert_dialog_calendar_plan_deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    </CalendarView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预计的时间（小时）"
+        android:layout_marginLeft="95dp" />
+
+    <EditText
+        android:id="@+id/alert_dialog_plan_estimated_time"
+        android:inputType="time"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
