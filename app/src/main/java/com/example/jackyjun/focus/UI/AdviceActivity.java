@@ -63,8 +63,8 @@ public class AdviceActivity extends Activity {
                 GMailSender sender = new GMailSender("username@gmail.com","password");
                 sender.sendMail(params[0],
                         params[1],
-                        "jackyjun935@gmail.com",
-                        "jackyjun935@gmail.com");
+                        "username@gmail.com",
+                        "username@gmail.com");
                 Log.d("SendMail","email sent");
             } catch (Exception e) {
                 Log.e("SendMail", e.getMessage(), e);
