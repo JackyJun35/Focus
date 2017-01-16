@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         loadPlanData();
-        Log.d("Fuck MainActivity","MainActivity->onResume");
+        Log.d("MainActivity","MainActivity->onResume");
     }
 
     @Override

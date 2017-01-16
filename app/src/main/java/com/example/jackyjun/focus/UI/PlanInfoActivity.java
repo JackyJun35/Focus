@@ -313,8 +313,8 @@ public class PlanInfoActivity extends AppCompatActivity {
                         mPlan.setDeadline(calendar);
                         db.updatePlan(mPlan);
 
-                        Log.d("Fuck PlanTitle",planTitle.getText().toString().trim());
-                        Log.d("Fuck mPlan",mPlan.toString());
+                        Log.d("PlanTitle",planTitle.getText().toString().trim());
+                        Log.d("mPlan",mPlan.toString());
 
                         planNameText.setText(planTitle.getText().toString().trim());
                         if(mPlan.getDeadline()!=null){

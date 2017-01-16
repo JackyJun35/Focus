@@ -190,7 +190,7 @@ public class AddPlanActivity extends AppCompatActivity {
                     if(data.get(1).get("displayText") !=null){
                         intent.putExtra("duration", data.get(1).get("displayText").toString());
                     }
-                    Log.d("FuckDescription",descriptionEditText.getText().toString());
+                    Log.d("Description",descriptionEditText.getText().toString());
                     intent.putExtra("description",descriptionEditText.getText().toString());
                     setResult(RESULT_OK,intent);
                     finish();
